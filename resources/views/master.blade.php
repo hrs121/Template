@@ -15,7 +15,6 @@
 
 @yield('content')
 
-@include('contact')
 @include('footer')
 
 	

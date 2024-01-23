@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\adminController;
+use App\Http\Controllers\portfolioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', [adminController::class, 'dashboard']);
+Route::get('/', [portfolioController::class, 'showWelcomePage']);
+
